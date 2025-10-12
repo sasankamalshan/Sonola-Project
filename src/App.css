@@ -1,0 +1,12 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Dark mode transitions */
+* {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
