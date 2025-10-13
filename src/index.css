@@ -13,8 +13,8 @@
 /* all sections */
 .all-sections {
 display: flex;
-  width: 90%;             
-  height: 90vh;           
+  width: 88%;             
+  height: 88%;           
   margin: 40px auto;     
   border-radius: 20px;
   overflow: hidden;
@@ -22,65 +22,122 @@ display: flex;
   transition: all 0.3s ease; /*Smooth resize */
 }
 
+
+/*under image*/
+.underimage {
+  position: absolute;
+  bottom: 17px;
+  width: 84px;
+  height: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0.4;
+  filter: grayscale(100) brightness(0.8);
+}
+
+.watermark {
+  width: 84px;
+  height: auto;
+  position: center;
+}
+
+
 /* Left Side */
 .left-section {
   flex: 1;
   background-color: #f5f5f5;
-  padding: 100px;
-  display: flex;
+  padding: 30px;
+  display: block;                 /* ✅ proper flex container */
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;/* ✅ top & bottom alignment */
+  position: relative;
 }
 
 .left-section h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 18px;
 }
 
 .left-section p {
+  padding: 0;
+  font-size: 1.2rem;  /* ✅ same size as medium text */
   color: #333;
   margin-bottom: 10px;
 }
 
-.small-text {
-  font-size: 0.9rem;
+.medium-text {
+  padding: 10px;
+  font-size: 1.2rem;  /* ✅ same as p */
   color: gray;
+  margin-top: 45%;   /* ✅ pushes it to the bottom */
 }
 
-.source {
-  font-size: 0.8rem;
+.small {
+  padding: 10px;
+  font-size: 0.8rem;  /* ✅ smaller */
   color: #777;
 }
+
 
 /* Progress bar */
 .progress-bar {
   display: flex;
+  align-items: center;  /* ✅ keeps all dots perfectly on the same line */
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .dot {
-  width: 15px;
-  height: 5px;
-  background-color: #d3d3d3;
+  width: 35px;
+  height: 7px;
+  background-color: #3F8BFE66;
   border-radius: 5px;
+  transition: opacity 0.3s ease;  /* Smooth fade if needed */
+  position: center;
+  bottom: -20px;
+  right: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10%;
+}
+.dots-wrapper .dot:nth-child(1) {
+  opacity: 1;      /* Full visibility */
+}
+
+.dots-wrapper .dot:nth-child(2) {
+  opacity: 0.75;   /* Slightly faded */
+}
+
+.dots-wrapper .dot:nth-child(3) {
+  opacity: 0.5;    /* Medium fade */
+}
+
+.dots-wrapper .dot:nth-child(4) {
+  opacity: 0.25;   /* Strong fade */
 }
 
 .dot.active {
   background-color: #007bff;
-  width: 40px;
+  width: 107px;
 }
 
 /* Next button */
 .next-btn {
-  background-color: #007bff;
+  background-color: #0066FFCC;
   color: white;
+  position: absolute;
+  bottom: -20px;
+  right: 100px;
   border: none;
-  padding: 16px 32px;
-  border-radius: 10px;
-  font-size: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 35px;
+  gap: 10px;
+  border-radius: 12px;
+  font-size: 1.3rem;
   cursor: pointer;
-  margin-left: 500px;
 }
 
 .next-btn:hover {

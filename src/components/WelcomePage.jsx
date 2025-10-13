@@ -16,19 +16,23 @@ const WelcomeScreen = () => {
           </div>
 
           <div className="bottom-area">
-            <p className="small-text">
+            <p className="medium-text">
               63% of marketers say creating engaging content consistently is their
               biggest challenge.
             </p>
-            <p className="source">Content Marketing Institute, 2022</p>
-            <div className="progress-bar">
-              <div className="dot"></div>
-              <div className="dot"></div>
-              <div className="dot"></div>
-              <div className="dot"></div>
-              <div className="dot active"></div>
+            <p className="small-text">
+              <small>Content Marketing Institute, 2022 </small>
+              </p>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative', width: '100%' }}>
+              <div className="progress-bar" style={{ marginBottom: 0 }}>
+                <div className="dot"></div>
+                <div className="dot"></div>
+                <div className="dot"></div>
+                <div className="dot"></div>
+                <div className="dot active"></div>
+              </div>
+              <button className="next-btn">Next</button>
             </div>
-            <button className="next-btn">Next</button>
           </div>
         </div>
 
@@ -40,7 +44,13 @@ const WelcomeScreen = () => {
           </video>
         </div>
       </div>
-      
+    </div>
+    <div className="underimage">
+      <img
+        src="/public/watermark.png"
+        alt="sonola welcome watermark logo"
+        className="watermark"
+      />
     </div>
   </div>
   );
