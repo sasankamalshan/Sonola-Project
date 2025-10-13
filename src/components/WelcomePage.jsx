@@ -1,6 +1,14 @@
+
+import { useNavigate } from "react-router-dom";
 import "../index.css";
 
 const WelcomeScreen = () => {
+  const navigate = useNavigate();
+
+  const handleNextClick = () => {
+    navigate("/home");
+  };
+
   return (
   <div className="container">
     <div className="all-sections">
@@ -31,7 +39,7 @@ const WelcomeScreen = () => {
                 <div className="dot"></div>
                 <div className="dot active"></div>
               </div>
-              <button className="next-btn">Next</button>
+              <button className="next-btn" onClick={handleNextClick}>Next</button>
             </div>
           </div>
         </div>
