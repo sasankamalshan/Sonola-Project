@@ -179,3 +179,41 @@ display: flex;
     font-size: 1.5rem;
   }
 }
+
+:root {
+  --background: #ffffff;
+  --text-primary: #333333;
+  --card-bg: #ffffff;
+  --gradient-start: #f0f0f5;
+  --gradient-end: #e0e0ea;
+  --button-bg: #007bff;
+  --button-text: #ffffff;
+  --dot-bg: #d3d3d3;
+  --hover-bg: #007bff; /* Add this for hover effect */
+}
+
+[data-theme="dark"] {
+  --background: #1F1F1F;
+  --text-primary: #ffffff;
+  --card-bg: #2d2d2d;
+  --gradient-start: #1a1a1a;
+  --gradient-end: #252525;
+  --button-bg: #0056b3;
+  --button-text: #ffffff;
+  --dot-bg: #555555;
+  --hover-bg: #0056b3; /* Dark mode hover */
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+}
+
+nav .mr-3 svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+nav a:hover {
+  background-color: var(--hover-bg)/20; /* Use existing variable with opacity */
+}
