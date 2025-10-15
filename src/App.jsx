@@ -1,30 +1,25 @@
-// App.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import WelcomeScreen from './components/WelcomePage';
-import Homepage from './Homepage';
+// src/App.jsx
 
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
+// Import the new components
+import WelcomePage from './components/WelcomePage';
+import Homepage from './Homepage';
 function App() {
   return (
     <Router>
-      <div className="flex">
-        {/* Sidebar / Navbar */}
-        <Navbar />
+      <div className="flex bg-gray-50">
+        
 
-        {/* Main Content Area */}
-        <div className="flex-1 p-6">
+        <main className="flex-1">
+          {/* Your page routes would go here */}
           <Routes>
-            <Route path="/" element={<WelcomeScreen />} />
-            <Route path="/home" element={<Homepage />} />
-            <Route path="/project" element={<div>Project Page</div>} />
-            <Route path="/template" element={<div>Template Page</div>} />
-            <Route path="/upload" element={<div>Upload Page</div>} />
-            <Route path="/more" element={<div>More Page</div>} />
-            <Route path="/support" element={<div>Support Page</div>} />
-            <Route path="/settings" element={<div>Settings Page</div>} />
-            <Route path="/profile" element={<div>Profile Page</div>} />
+            <Route path="/" element={<WelcomePage />} />
+            <Route path='/home' element={<Homepage/>} />
           </Routes>
-        </div>
+        </main>
       </div>
     </Router>
   );

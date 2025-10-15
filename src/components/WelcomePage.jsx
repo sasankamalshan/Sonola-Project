@@ -2,7 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import "../index.css";
 
-const WelcomeScreen = () => {
+const WelcomePage = () => {
   const navigate = useNavigate();
 
   const handleNextClick = () => {
@@ -64,4 +64,4 @@ const WelcomeScreen = () => {
   );
 }
 
-export default WelcomeScreen;
+export default WelcomePage;

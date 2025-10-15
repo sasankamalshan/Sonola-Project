@@ -1,26 +1,23 @@
-import React from 'react';  
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import './index.css';
+import Sidebar from './components/sidebar';
+import Navbar from './components/Navbar';
+import Herosection from './components/Herosection';
 
-const Homepage = () => {
-    const navigate = useNavigate();
-
-    const goToWelcomePage = () => {
-        navigate('/');
-        
-    };
-
-    return (
-        <div className='min-h-screen bg-[var(--background)] p-6'>
-            <h1 className='text-3xl font-bold mb-4 text-[var(--text-primary)]'>Homepage</h1>
-            <p className='text-[var(--text-secondary)] mb-6'>This is the homepage of the Sonola application.</p>
-            <button 
-                onClick={goToWelcomePage} 
-                className='px-4 py-2 bg-[var(--button-bg)] text-[var(--button-text)] rounded hover:bg-[var(--button-hover-bg)]'
-            >
-                Go to Welcome Page
-            </button>
+const Homepage = () => (
+    <div className="parent">
+        <div className="sidebar">
+            <Sidebar />
         </div>
-    );
-};
+        <div className="content">
+                        <div className="navbar">
+                <Navbar />
+            </div>
+            <div className="sonola">
+                <Herosection />
+            </div>
+        </div>
+    </div>
+);
 
 export default Homepage;
