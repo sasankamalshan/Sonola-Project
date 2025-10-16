@@ -48,9 +48,9 @@ display: flex;
   flex: 1;
   background-color: #f5f5f5;
   padding: 30px;
-  display: block;                 /* ✅ proper flex container */
+  display: block;                 
   flex-direction: column;
-  justify-content: space-between;/* ✅ top & bottom alignment */
+  justify-content: space-between;
   position: relative;
 }
 
@@ -62,21 +62,21 @@ display: flex;
 
 .left-section p {
   padding: 0;
-  font-size: 1.2rem;  /* ✅ same size as medium text */
+  font-size: 1.2rem;  
   color: #333;
   margin-bottom: 10px;
 }
 
 .medium-text {
   padding: 10px;
-  font-size: 1.2rem;  /* ✅ same as p */
+  font-size: 1.2rem;  
   color: gray;
-  margin-top: 45%;   /* ✅ pushes it to the bottom */
+  margin-top: 45%;   
 }
 
 .small {
   padding: 10px;
-  font-size: 0.8rem;  /* ✅ smaller */
+  font-size: 0.8rem;  
   color: #777;
 }
 
@@ -84,7 +84,7 @@ display: flex;
 /* Progress bar */
 .progress-bar {
   display: flex;
-  align-items: center;  /* ✅ keeps all dots perfectly on the same line */
+  align-items: center;  
   gap: 10px;
   margin-bottom: 30px;
 }
@@ -94,7 +94,7 @@ display: flex;
   height: 7px;
   background-color: #3F8BFE66;
   border-radius: 5px;
-  transition: opacity 0.3s ease;  /* Smooth fade if needed */
+  transition: opacity 0.3s ease;  
   position: center;
   bottom: -20px;
   right: 50px;
@@ -213,17 +213,28 @@ display: flex;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
+  padding: 1px;
 }
 
-.sidebar-nav ul,
-.utility-nav ul {
+.sidebar-nav ul{
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 2px;
+  width: 100%;
+}
+
+.utility-nav ul {
+  list-style: none;
+  position: relative;
+  top: 120px;
+  left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   width: 100%;
 }
 
@@ -240,8 +251,8 @@ display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  padding: 12px 8px;
+  gap: 4px;
+  padding: 8px;
   width: 80px;
   border-radius: 12px;
   text-decoration: none;
@@ -286,7 +297,7 @@ display: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 130px;
   padding: 10px 0;
 }
 
@@ -295,6 +306,7 @@ display: flex;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding: 12px;
 }
 
 .utility-nav .nav-item {
@@ -1136,24 +1148,15 @@ display: flex;
 }
 
 .schedule-preview {
-  margin-top: 12px;
+  margin-top: 1px;
   width: 100%;
-  height: 140px;
+  height: 180px;
   background: #f5f5f7;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
 }
 
-.schedule-thumbnail {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #00D4FF 0%, #0099FF 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
 
 /* Responsive Design */
 @media (max-width: 1024px) {

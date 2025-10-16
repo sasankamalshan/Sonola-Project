@@ -32,25 +32,25 @@ const Card = () => {
       id: 5,
       title: 'Document',
       description: 'Mark · May 14, 2025',
-      image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop',
+      image: './public/Visual7.png',
     },
     {
       id: 6,
       title: 'Digital Marketing',
       description: 'Mark · May 14, 2025',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop',
+      image: './public/Visual4.png',
     },
     {
       id: 7,
       title: 'Web pages',
       description: 'Mark · May 14, 2025',
-      image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop',
+      image: './public/Visual6.png',
     },
     {
       id: 8,
       title: '60 Second Cut',
       description: 'Caroline · May 14, 2025',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop',
+      image: './public/Visual5.png',
     }
   ]);
 

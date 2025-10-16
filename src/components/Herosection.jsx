@@ -142,9 +142,8 @@ const Herosection = () => {
             <p className="card-subtitle-small">Advanced Content Calendar</p>
             <div className="schedule-preview">
               {/* Calendar/Schedule preview placeholder */}
-              <div className="schedule-thumbnail">
-                {/* Add preview image here */}
-              </div>
+              <img src="/public/Schedule Posts.jpg" alt="Integration apps" className="logos-image" />
+
             </div>
           </div>
 
