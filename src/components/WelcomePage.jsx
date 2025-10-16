@@ -55,7 +55,7 @@ const WelcomePage = () => {
     </div>
     <div className="underimage">
       <img
-        src="/public/watermark.png"
+        src="/watermark.png"
         alt="sonola welcome watermark logo"
         className="watermark"
       />
