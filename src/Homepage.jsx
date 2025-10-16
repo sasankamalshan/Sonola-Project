@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import Sidebar from './components/sidebar';
+import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Herosection from './components/Herosection';
 import Card from './components/card';
