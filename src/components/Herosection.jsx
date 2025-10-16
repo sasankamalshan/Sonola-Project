@@ -40,99 +40,103 @@ const Herosection = () => {
 
         {/* Right Side - Cards Grid */}
         <div className="hero-cards">
-          
-          {/* grpah card  */}
+
+          {/* Increase Card */}
           <div className="hero-card stats-card">
             <h3 className="card-title">Increase Customer Retention by 85%</h3>
             <p className="card-subtitle">AI Summarised Reports</p>
             <div className="stats-graph">
+              {/* Blue gradient graph with dots */}
+              <svg viewBox="0 0 240 120" className="graph-svg" preserveAspectRatio="none">
+                {/* Gradient definition */}
+                <defs>
+                  <linearGradient id="graphGradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#007AFF" stopOpacity="0.3" />
+                    <stop offset="100%" stopColor="#007AFF" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
                 
-              {/* Graph visualization placeholder */}
-              <svg viewBox="0 0 200 80" className="graph-svg">
+                {/* Gradient fill area */}
                 <path 
-                  d="M 0 60 Q 50 40, 100 45 T 200 20" 
-                  fill="none" 
-                  stroke="#3B82F6" 
-                  strokeWidth="3"
-                  className="graph-line"
+                  d="M 0 120 L 0 80 Q 60 60, 120 65 T 240 40 L 240 120 Z" 
+                  fill="url(#graphGradient)"
                 />
-                <circle cx="0" cy="60" r="4" fill="#3B82F6" />
-                <circle cx="100" cy="45" r="4" fill="#3B82F6" />
-                <circle cx="200" cy="20" r="4" fill="#3B82F6" />
-              </svg>
-            </div>
-          </div>
+                
+                {/* Main graph line */}
+                <path 
+                  d="M 0 80 Q 60 60, 120 65 T 240 40" 
+                  className="graph-line"
+                  strokeWidth="2"
+                />
+                
+                {/* Data point circles */}
+                        <circle cx="0" cy="80" r="2.5" fill="#007AFF" />
+                        <circle cx="40" cy="70" r="2" fill="#007AFF" />
+                        <circle cx="80" cy="65" r="2.5" fill="#007AFF" />
+                        <circle cx="120" cy="65" r="3" fill="#007AFF" />
+                        <circle cx="160" cy="55" r="2.5" fill="#007AFF" />
+                        <circle cx="200" cy="45" r="2.5" fill="#007AFF" />
+                        <circle cx="240" cy="40" r="3" fill="#007AFF" />
+                        </svg>
+                      </div>
+                      </div>
 
-          {/* Top Right Card (3/4 visible) - Video/Team Lead Card */}
-          <div className="hero-card video-card card-top-right">
-            <div className="video-thumbnail">
-              {/* Background image - teamlead.jpg */}
-              <img 
-                src="/teamlead.jpg" 
-                alt="Emma Owens" 
-                className="video-bg"
-              />
-              <div className="video-overlay">
-                <button className="play-button">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-                    <path d="M8 5v14l11-7z"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div className="video-info">
-              <h4 className="video-title">Emma Owens</h4>
-              <p className="video-subtitle">Lead Project Director</p>
-            </div>
-          </div>
+                      {/* Video Card */}
+                      <div className="hero-card video-card card-top-right">
+                      <div className="video-thumbnail">
+                        {/* Background image - teamlead.jpg */}
+                        <img 
+                        src="/teamlead.png" 
+                        alt="Emma Owens" 
+                        className="video-bg"
+                        />
+                        <div className="video-overlay">
+                        <div className="name">
+                          <h4 className="video-title">Emma Owens</h4>
+                          <p className="video-subtitle">Lead Project Director</p>
+                        </div>
+                        <button className="play-button">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                          <path d="M8 5v14l11-7z"/>
+                          </svg>
+                        </button>
+                        </div>
+                      </div>
+                      
+                     
+                      </div>
 
-          {/* Bottom Left Card - Collaborate Card */}
-          <div className="hero-card collaborate-card">
-            <h3 className="card-title-small">Collaborate</h3>
-            <p className="card-subtitle-small">Invite people</p>
-            <div className="avatar-group">
-              {/* Avatar placeholders - Add team member images here */}
-              <div className="avatar avatar-placeholder">
-                {/* Replace with actual image: <img src="/team-member-1.jpg" alt="Team member" /> */}
-              </div>
-              <div className="avatar avatar-placeholder">
-                {/* Replace with actual image: <img src="/team-member-2.jpg" alt="Team member" /> */}
-              </div>
-              <div className="avatar avatar-placeholder">
-                {/* Replace with actual image: <img src="/team-member-3.jpg" alt="Team member" /> */}
-              </div>
-              <div className="avatar avatar-add">
-                <span>+</span>
-              </div>
-            </div>
-          </div>
+                      {/* Bottom Left Card - Collaborate Card */}
+                            <div className="hero-card collaborate-card card-bottom-left">
+                            <h3 className="card-title-small">Collaborate</h3>
+                            <p className="card-subtitle-small">Invite people</p>
+                            <div className="avatar-group">
+                              <div className="avatar avatar1">
+                              <img src="/team-member1.jpg" alt="Team member 1" />
+                              </div>
+                              <div className="avatar avatar2">
+                              <img src="/team-member2.jpg" alt="Team member 2" />
+                              </div>
+                              <div className="avatar avatar3">
+                              <img src="/team-member3.jpg" alt="Team member 3" />
+                              </div>
+                              <div className="avatar avatar4">
+                              <img src="/team-member4.jpg" alt="Team member 4" />
+                              </div>
+                            </div>
+                            </div>
 
-          {/* Bottom Right Card (1/4 visible) - Integrations Card */}
+                            {/* Bottom Right Card (1/4 visible) - Integrations Card */}
           <div className="hero-card integrations-card card-bottom-right">
-            <h3 className="card-title-small">Integrations</h3>
+            <h3 className="card-title-large">Integrations</h3>
             <p className="card-subtitle-small">Connect with your favourite app</p>
-            <div className="integration-icons">
-              {/* Integration app icons */}
-              <div className="integration-icon">
-                {/* Figma icon placeholder */}
-                <div className="icon-placeholder figma-icon"></div>
-              </div>
-              <div className="integration-icon">
-                {/* Dropbox icon placeholder */}
-                <div className="icon-placeholder dropbox-icon"></div>
-              </div>
-              <div className="integration-icon">
-                {/* Google Drive icon placeholder */}
-                <div className="icon-placeholder drive-icon"></div>
-              </div>
-              <div className="integration-icon">
-                {/* More icons... */}
-                <div className="icon-placeholder notion-icon"></div>
-              </div>
+            <div className="integration-logos">
+              <img src="/Logos.png" alt="Integration apps" className="logos-image" />
             </div>
+            
           </div>
 
-          {/* Top Right Corner - Schedule Posts Card (partial view) */}
+          {/* card 5 - Schedule  */}
           <div className="hero-card schedule-card card-top-corner">
             <h3 className="card-title-small">Schedule Posts</h3>
             <p className="card-subtitle-small">Advanced Content Calendar</p>

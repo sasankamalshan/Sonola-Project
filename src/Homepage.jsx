@@ -3,6 +3,7 @@ import './index.css';
 import Sidebar from './components/sidebar';
 import Navbar from './components/Navbar';
 import Herosection from './components/Herosection';
+import Card from './components/card';
 
 const Homepage = () => (
     <div className="parent">
@@ -10,12 +11,17 @@ const Homepage = () => (
             <Sidebar />
         </div>
         <div className="content">
-                        <div className="navbar">
+            <div className="navbar">
                 <Navbar />
             </div>
             <div className="sonola">
                 <Herosection />
             </div>
+            <div className="cards">
+                <Card />
+
+            </div>
+
         </div>
     </div>
 );
