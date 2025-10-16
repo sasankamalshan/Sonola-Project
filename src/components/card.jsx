@@ -7,50 +7,50 @@ const Card = () => {
       id: 1,
       title: 'Web Page',
       description: 'Good products deserves good websites.',
-      image: './public/visual.png',
+      image: '/visual.png',
     },
     {
       id: 2,
       title: 'Presentations',
       description: 'Easily edit our animated templates.',
-      image: './public/Visual1.png',
+      image: '/Visual1.png',
     },
     {
       id: 3,
       title: 'Social Media',
       description: 'Everything you need for socials.',
-      image: './public/Visual2.png',
+      image: '/Visual2.png',
     },
     {
       id: 4,
       title: 'Sales Pitch',
       description: 'Turn your dreams into reality',
-      image: './public/visual3.png',
+      image: '/visual3.png',
     },
     // Row 2
     {
       id: 5,
       title: 'Document',
       description: 'Mark · May 14, 2025',
-      image: './public/Visual7.png',
+      image: '/Visual7.png',
     },
     {
       id: 6,
       title: 'Digital Marketing',
       description: 'Mark · May 14, 2025',
-      image: './public/Visual4.png',
+      image: '/Visual4.png',
     },
     {
       id: 7,
       title: 'Web pages',
       description: 'Mark · May 14, 2025',
-      image: './public/Visual6.png',
+      image: '/Visual6.png',
     },
     {
       id: 8,
       title: '60 Second Cut',
       description: 'Caroline · May 14, 2025',
-      image: './public/Visual5.png',
+      image: '/Visual5.png',
     }
   ]);
 

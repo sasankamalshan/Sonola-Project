@@ -47,7 +47,7 @@ const WelcomePage = () => {
         {/* Right Side */}
         <div className="right-section">
           <video autoPlay muted loop>
-            <source src="/public/welcome-video.mp4" type="video/mp4" />
+            <source src="/welcome-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
