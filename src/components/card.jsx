@@ -7,7 +7,7 @@ const Card = () => {
       id: 1,
       title: 'Web Page',
       description: 'Good products deserves good websites.',
-      image: '/visual.png',
+      image: '/Visual8.png',
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ const Card = () => {
       id: 4,
       title: 'Sales Pitch',
       description: 'Turn your dreams into reality',
-      image: '/visual3.png',
+      image: '/Visual3.png',
     },
     // Row 2
     {

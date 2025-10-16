@@ -54,7 +54,6 @@ const SettingsIcon = (props) => (
   </svg>
 );
 
-// --- Navigation and Utility Item Arrays ---
 
 const navItems = [
   { label: 'Home', path: '/home', Icon: HomeIcon },
@@ -118,7 +117,7 @@ const Sidebar = () => {
         <div className="sidebar-profile">
           <div className="profile-avatar">
             <img 
-              src="./public/profile.jpg" 
+              src="/profile.jpg" 
               alt="User Avatar" 
               className="avatar-img"
             />
