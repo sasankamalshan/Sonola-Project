@@ -131,7 +131,7 @@ const Herosection = () => {
             <h3 className="card-title-large">Integrations</h3>
             <p className="card-subtitle-small">Connect with your favourite app</p>
             <div className="integration-logos">
-              <img src="./public/Logos.png" alt="Integration apps" className="logos-image" />
+              <img src="/Logos.png" alt="Integration apps" className="logos-image" />
             </div>
             
           </div>
@@ -142,7 +142,7 @@ const Herosection = () => {
             <p className="card-subtitle-small">Advanced Content Calendar</p>
             <div className="schedule-preview">
               {/* Calendar/Schedule preview placeholder */}
-              <img src="/public/Schedule Posts.jpg" alt="Integration apps" className="logos-image" />
+              <img src="/Schedule Posts.jpg" alt="Integration apps" className="logos-image" />
 
             </div>
           </div>
